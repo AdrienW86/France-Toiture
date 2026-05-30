@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, Wrench, Home, Droplets, PaintBucket } from 'lucide-react';
@@ -32,9 +33,18 @@ export default function Header() {
       <header className="fixed top-4 left-0 right-0 z-50 mx-4 md:mx-auto max-w-5xl bg-white/90 backdrop-blur-md border border-zinc-200 shadow-sm rounded-2xl">
         <div className="px-6 py-3 flex justify-between items-center">
           
-          {/* Logo */}
-          <Link href="/" className="text-xl font-extrabold text-zinc-950 tracking-tight">
-            FRANCE<span className="text-blue-600 pl-1">TOITURE</span>
+          {/* Logo avec Icône intégrée */}
+          <Link href="/" className="flex items-center gap-3 group">
+            <Image 
+              src="/logo.png" // 2. Change l'extension si c'est un .svg ou .jpg
+              alt="Logo France Toiture"
+              width={42}      // Ajuste la taille comme tu veux (32px par 32px ici)
+              height={42}
+              className="object-contain group-hover:scale-105 transition-transform duration-200"
+            />
+            <span className="text-xl font-extrabold text-zinc-950 tracking-tight">
+              FRANCE<span className="text-blue-600 pl-1">TOITURE</span>
+            </span>
           </Link>
 
           {/* Nav Desktop (Inchangée) */}
