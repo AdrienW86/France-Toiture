@@ -31,8 +31,8 @@ export default function MentionsLegalesPage() {
           </p>
           <ul className="list-disc pl-5 space-y-1 text-sm">
             <li><strong>Propriétaire :</strong> France Toiture — Entreprise Individuelle / SARL (À compléter) — Adresse : Perpignan (66000)</li>
-            <li><strong>Responsable de la publication :</strong> [Nom du Gérant] — contact@france-toiture-couverture.fr</li>
-            <li><strong>Numéro SIRET / RM :</strong> [Numéro SIRET à insérer]</li>
+            <li><strong>Responsable de la publication :</strong> Hospice Michel — contact@france-toiture-couverture.fr</li>
+            <li><strong>Numéro SIRET / RM :</strong> 48316042000012</li>
             <li><strong>Numéro de TVA Intracommunautaire :</strong> [Numéro de TVA ou "TVA non applicable, art. 293 B du CGI"]</li>
           </ul>
         </section>
