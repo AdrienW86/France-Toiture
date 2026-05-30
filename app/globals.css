@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  /* Le Bleu Ardoise devient la couleur principale de texte */
+  --color-brand-blue: #1857b4; 
+  /* Le Rouge reste pour l'action */
+  --color-brand-red: #DC143C; 
+  
+  --color-background: #ffffff;
+  --color-foreground: #2C3E50; /* Texte principal en Bleu */
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground); /* Tout le site est en bleu par défaut */
+  font-family: sans-serif;
+}
