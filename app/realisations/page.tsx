@@ -9,13 +9,13 @@ import Link from 'next/link';
 const projects = [
   {
     id: 1,
-    title: "Rénovation complète de toiture en tuiles romanes",
+    title: "Rénovation complète de toiture en tuiles canal",
     category: "couverture",
     categoryLabel: "Rénovation Couverture",
     location: "Cabestany (66)",
     year: "2025",
-    description: "Dépose de l'ancienne couverture fatiguée, renforcement de la charpente et pose de tuiles romanes traditionnelles avec isolation thermique sous-toiture.",
-    image: "https://images.unsplash.com/photo-1632759154030-cfcc6dc70cfd?q=80&w=1200&auto=format&fit=crop",
+    description: "Dépose de l'ancienne couverture fatiguée, renforcement de la charpente et pose de tuiles canal traditionnelles avec isolation thermique sous-toiture.",
+    image: "/tuiles-canal.jpg",
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const projects = [
     location: "Saint-Estève (66)",
     year: "2026",
     description: "Nettoyage basse pression des tuiles colonisées par les mousses et application d'un traitement hydrofuge incolore pour prolonger la vie du toit de 10 ans.",
-    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop",
+    image: "/nettoyage.jpg",
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const projects = [
     location: "Perpignan - Centre (66)",
     year: "2026",
     description: "Recherche de fuite infiltrante après un épisode de forte pluie, remplacement des solins en zinc défectueux et étanchéité du contour de cheminée.",
-    image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1200&auto=format&fit=crop",
+    image: "/fuite.jpg",
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ const projects = [
     location: "Canet-en-Roussillon (66)",
     year: "2025",
     description: "Réfection totale de l'étanchéité d'un toit plat sur une maison contemporaine en bord de mer, hautement résistante aux UV et aux embruns.",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
+    image: "/etancheite.jpg",
   },
   {
     id: 5,
@@ -55,7 +55,7 @@ const projects = [
     location: "Bompas (66)",
     year: "2026",
     description: "Nettoyage complet des murs extérieurs, rebouchage des micro-fissures de structure et application d'une peinture technique haut de gamme résistante au soleil du Sud.",
-    image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1200&auto=format&fit=crop",
+    image: "/peinture.jpg",
   },
   {
     id: 6,
@@ -65,7 +65,7 @@ const projects = [
     location: "Thuir (66)",
     year: "2025",
     description: "Dépose d'anciennes gouttières PVC cuites par le soleil et pose d'un réseau complet de zinguerie sur-mesure pour une évacuation optimale des eaux pluviales.",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop",
+    image: "gouttiere.jpg",
   }
 ];
 
