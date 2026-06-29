@@ -10,8 +10,8 @@ export async function POST(req: Request) {
 
     // Envoi via Resend
     const data = await resend.emails.send({
-      from: 'France Toiture <contact@votre-domaine.fr>', // Remplacez par votre domaine validé
-      to: process.env.EMAIL_TO || 'votre-email@example.com',
+      from: 'France Toiture <contact@france-toiture-couverture.fr>', // Remplacez par votre domaine validé
+      to: process.env.ZOHO_USER || 'contact@france-toiture-couverture.fr',
       subject: `Nouveau devis : ${service} - ${name}`,
       html: `
         <div style="font-family: sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto;">
