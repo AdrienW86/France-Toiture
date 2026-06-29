@@ -15,16 +15,29 @@ export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+ const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulation d'envoi (tu pourras brancher ton API Stripe/Email ou formulaire ici)
-    setTimeout(() => {
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+        setFormData({ name: '', phone: '', email: '', city: '', service: '', message: '' });
+      } else {
+        alert("Une erreur est survenue lors de l'envoi. Veuillez réessayer.");
+      }
+    } catch (error) {
+      console.error("Erreur:", error);
+      alert("Erreur de connexion avec le serveur.");
+    } finally {
       setIsSubmitting(false);
-      setSubmitted(true);
-      setFormData({ name: '', phone: '', email: '', city: '', service: '', message: '' });
-    }, 1200);
+    }
   };
 
   return (
