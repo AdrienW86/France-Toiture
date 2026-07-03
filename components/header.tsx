@@ -105,7 +105,7 @@ export default function Header() {
               );
             })}
             
-            <Link href="/devis" className="bg-red-600 text-white px-5 py-2 rounded-xl text-xs uppercase tracking-wider font-bold hover:bg-red-700 transition-all">
+            <Link href="/contact" className="bg-red-600 text-white px-5 py-2 rounded-xl text-xs uppercase tracking-wider font-bold hover:bg-red-700 transition-all">
               Devis Gratuit
             </Link>
           </nav>
