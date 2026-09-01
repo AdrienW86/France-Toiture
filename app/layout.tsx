@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Header from "@/components/header";
+import FacebookFeed from "@/components/FacebookFeed";
 import Footer from "@/components/footer";
 import "./globals.css";
 
@@ -32,6 +33,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <Header />
         <main className="flex-grow">{children}</main>
+        <FacebookFeed />
         <Footer />
       </body>
     </html>
